@@ -1,0 +1,18 @@
+.container-effect-write-machine {
+    @apply flex justify-center flex-col box-border;
+}
+
+.base-write-machine {
+    @apply font-semibold text-7xl text-white;
+    font-family: monospace;
+}
+.base-write-machine::first-letter {
+    @apply text-slate-900
+}
+
+.write {
+    @apply text-slate-900 font-bold text-8xl
+}
+.write::first-letter {
+    @apply text-white
+}

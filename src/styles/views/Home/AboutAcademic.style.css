@@ -1,0 +1,53 @@
+.about-academic {
+    @apply w-full h-full bg-black flex flex-col items-center justify-center
+}
+.about-academic div {
+    @apply bg-none box-border text-white;
+}
+
+.introduction-academic {
+    @apply w-1/2 text-center font-monospace text-base box-border my-4
+}
+
+.content-about-academic {
+    @apply w-full h-[85%] flex flex-row justify-center items-center;
+}
+
+.content_primary_about_academic {
+    @apply w-1/2 h-full flex flex-col items-center justify-center;
+    @apply overflow-hidden border-r-[1px] border-[#151D3B];
+}
+.item-primary {
+    @apply w-5/6 text-center h-[22%] bg-none border-t-[1px] border-[#151D3B] box-border;
+    @apply relative right-[0%];
+    animation-name: item-primary;
+    animation-play-state: running;
+    animation-duration: 2s;
+}
+@keyframes item-primary {
+    from {
+        @apply right-[30%]
+    }
+}
+.content_primary_about_academic div h3 {
+    @apply text-xl text-[#151D3B] pb-2
+}
+
+.content_secondary_about_academic {
+    @apply w-1/2 h-full overflow-hidden flex flex-col items-center justify-center;
+    @apply box-border pt-6;
+}
+.item-secondary {
+    @apply w-5/6 text-center h-[22%] bg-none border-t-[1px] border-[#151D3B];
+    @apply relative left-[0%];
+    animation-name: item-secondary;
+    animation-duration: 2s
+}
+@keyframes item-secondary {
+    from {
+        @apply left-[30%]
+    }
+}
+.content_secondary_about_academic div h3 {
+    @apply text-xl text-[#151D3B] pb-2
+}

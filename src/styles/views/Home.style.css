@@ -1,0 +1,16 @@
+.container-home {
+    @apply bg-black;
+}
+
+/* style of presentation-me */
+.container-presentation-me {
+    height: 60vh;
+    background-color: aqua;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+}
+
+/* style of  container-about-academic*/
+.container-about-academic {
+    @apply h-[75vh] bg-green-900;
+}

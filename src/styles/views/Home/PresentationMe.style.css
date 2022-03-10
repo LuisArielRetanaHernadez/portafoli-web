@@ -1,0 +1,58 @@
+/*------- style og presentation-me -------*/
+.presentation-me {
+    @apply w-full h-full bg-[#FBF8F1] flex flex-wrap justify-center items-center relative;
+}
+/* style of general-presentation*/
+.general-presentation{
+    @apply w-2/5 h-[75%] bg-white p-2 absolute outline-hidden
+}
+/* style of presentation-about */
+.presentation-about {
+    @apply bg-blue-secundary font-ebraim flex flex-row flex-wrap items-center justify-center;
+    @apply text-yellow-50 rounded-xl;
+    @apply absolute z-10 left-[47%] top-[15%];
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    animation-name: about;
+    animation-duration: 2s;
+}
+@keyframes  about {
+    from {
+        left: 57%;
+    }
+    to {
+        left: 47%;
+    }
+}
+/* style of container-my-phoyo */
+.container-my-photo {
+    @apply w-[19%] h-[35%] bg-yellow-50 rounded-[50%] float-left;
+    shape-outside: url(https://res.cloudinary.com/dqmkovsdy/image/upload/c_fit,q_auto:best,r_30,w_134/v1646442461/portafoli/multimedia/img/me-profile_mplak2.png);
+    shape-image-threshold: 0.5;
+    shape-margin: 20px;
+    float: left;
+}
+/* style of presentation-basic */
+.presentation-basic {
+    @apply rounded-xl flex flex-wrap overflow-hidden right-[50%] bottom-[15%];
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 2s;
+}
+.presentation-basic h3 {
+    @apply text-xl font-monospace;
+    font-weight: 500;
+}
+.date-basic {
+    @apply flex flex-col justify-center items-center m-2;
+}
+.presentation-basic::before {
+    @apply w-[20%] h-[35%] bg-blue-secundary rounded-[50%] relative bottom-[15%] right-[8%] z-10;
+    content: ' ';
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    animation-name: before-basic;
+    animation-duration: 2s;
+}
+@keyframes before-basic {
+    from {
+        @apply rounded-none bottom-0 right-0 w-full h-full;
+    }
+}

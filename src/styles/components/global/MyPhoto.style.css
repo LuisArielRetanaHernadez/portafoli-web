@@ -1,0 +1,7 @@
+.my-photo {
+    @apply w-full h-full overflow-hidden flex rounded-[inherit];
+}
+.my-photo img {
+    @apply w-full h-full;
+    object-fit: cover;
+}

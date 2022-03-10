@@ -1,0 +1,19 @@
+.container-footer {
+    @apply w-full h-[30vh] bg-slate-900 flex justify-between
+}
+
+.footer-contact{
+    @apply w-[40%] h-full bg-none flex flex-col
+}
+.footer-contact ul {
+    @apply w-full h-full flex flex-col flex-nowrap items-center justify-center
+}
+.footer-contact ul li {
+    @apply bg-none flex items-center justify-center m-1;
+}
+.footer-contact ul li a {
+    @apply bg-none flex items-center justify-center box-border m-0
+}
+.footer-contact ul li a img {
+    @apply w-[auto] m-0
+}

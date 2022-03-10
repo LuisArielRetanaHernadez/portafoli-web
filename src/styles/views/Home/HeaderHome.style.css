@@ -1,0 +1,41 @@
+.container-header-home {
+    @apply w-full h-[70vh] flex flex-row items-center box-border relative;
+    background-image: url(../../../multimedia/img/Home/bg-header-home.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container-header-home::before {
+    @apply absolute top-0 bottom-0 left-0 right-0;
+    content:'';
+	background-color: rgba(0, 0, 0, 0.534);
+}
+/*------- etyle of the about-header-home -----*/
+.about-header-home {
+    @apply w-2/4 h-1/2 bg-none relative box-border p-6;
+}
+
+/* style of the write-machine */
+.write-machine {
+    @apply mb-4;
+}
+
+.phrase-header-home {
+    @apply w-2/3 h-auto absolute flex-wrap;
+}
+.phrase-header-home p{
+    @apply font-ebraim text-slate-600;
+    font-style: italic;
+    font-weight: 500;
+    overflow-wrap: break-word;
+}
+
+
+/*------ etyle of the me-profile-header-home -------*/
+.me-profile-header-home {
+    @apply w-1/2 h-full bg-none relative flex justify-center items-center
+}
+.me-profile-header-home img {
+    @apply h-full left-0 right-0 top-0;
+}
